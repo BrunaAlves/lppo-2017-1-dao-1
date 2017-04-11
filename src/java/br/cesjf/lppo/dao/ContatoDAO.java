@@ -17,6 +17,7 @@ public class ContatoDAO {
     public List<Contato> listAll() throws Exception{
         try {
             List<Contato> contatos = new ArrayList<>();
+         //   Class.forName("org.apache.derby.jdbc.ClientDriver");
             Class.forName("org.apache.derby.jdbc.ClientDriver");
             Connection conexao = DriverManager.getConnection("jdbc:derby://localhost:1527/lppo-2017-1", "usuario", "senha");
             
