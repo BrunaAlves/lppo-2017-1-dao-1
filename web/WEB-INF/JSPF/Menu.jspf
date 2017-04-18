@@ -1,0 +1,10 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+<h2>Agenda!</h2>
+<ul>
+    <li><a href="contatos.html">Listar</a></li>
+    <li><a href="novo.html">Novo</a></li>
+    
+</ul>
+</nav>
