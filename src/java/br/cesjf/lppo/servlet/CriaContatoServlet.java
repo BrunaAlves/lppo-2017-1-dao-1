@@ -33,9 +33,10 @@ public class CriaContatoServlet extends HttpServlet {
         novoContato.setSobrenome(request.getParameter("sobrenome"));    
         novoContato.setTelefone(request.getParameter("telefone"));    
         
-        ContatoDAO dao = new ContatoDAO();
+
         
         try {
+            ContatoDAO dao = new ContatoDAO();
             dao.cria(novoContato);
         } catch (Exception ex) {
             request.setAttribute("mensagem", ex);

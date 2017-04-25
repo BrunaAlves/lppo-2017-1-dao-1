@@ -20,13 +20,13 @@ import javax.servlet.http.HttpServletResponse;
 public class ListaContatosServlet extends HttpServlet {
 
 
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         List<Contato> contatos;
-        ContatoDAO dao = new ContatoDAO();
+
         try {
+           ContatoDAO dao = new ContatoDAO();
             contatos = dao.listAll();
         } catch (Exception ex) {
             Logger.getLogger(ListaContatosServlet.class.getName()).log(Level.SEVERE, null, ex);
